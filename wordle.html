@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wordle.com</title>
+	<link rel="stylesheet" type="text/css" href="assets/style/wordle.css">
+	
+
+</head>
+<body>
+	<div class="game">
+	<header class="navBar">
+		
+			<div class="helpImg">
+				<button class="helpButton icon">
+					<img src="assets/img/help.svg">
+				</button>
+			</div>
+
+			<div class="title">
+				WORDLE
+			</div>
+
+			<div class="buttons">
+				
+					<button class="statisticButton icon">
+						<img src="assets/img/statistic.svg">
+					</button>
+					
+				
+				
+					<button class="settingButton icon">
+				    <img src="assets/img/settings.svg">
+					</button>
+				
+
+			</div>
+	
+</header>
+<div class="error hidden">not enough letters</div>
+<div class="loser hidden">lose</div>
+<div class="win hidden">win</div>
+<div class="nope hidden">Not in word lists</div>
+<section class="squareEmpty">
+	<div class="container">
+	<div class="row row0">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="row ">
+		<div class="square "></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="row ">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="row">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="row ">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="row end">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	</div>
+</section>
+
+
+<section class="keyboard">
+<div class="container">
+	<div class="row">
+		<button class="tasto" data-letter="q">q</button>
+		<button class="tasto" data-letter="w">w</button>
+		<button class="tasto" data-letter="e">e</button>
+		<button class="tasto" data-letter="r">r</button>
+		<button class="tasto" data-letter="t">t</button>
+		<button class="tasto" data-letter="y">y</button>
+		<button class="tasto" data-letter="u">u</button>
+		<button class="tasto" data-letter="i">i</button>
+		<button class="tasto" data-letter="o">o</button>
+		<button class="tasto" data-letter="p">p</button>
+	</div>
+
+	<div class="row">
+		<div class="half"></div>
+		<button class="tasto" data-letter="a">a</button>
+		<button class="tasto" data-letter="s">s</button>
+		<button class="tasto" data-letter="d">d</button>
+		<button class="tasto" data-letter="f">f</button>
+		<button class="tasto" data-letter="g">g</button>
+		<button class="tasto" data-letter="h">h</button>
+		<button class="tasto" data-letter="j">j</button>
+		<button class="tasto" data-letter="k">k</button>
+		<button class="tasto" data-letter="l">l</button>
+		<div class="half"></div>
+	</div>
+
+	<div class="row">
+		<button class="tasto one-and-a-half" data-letter="ENTER">ENTER</button>
+		<button class="tasto" data-letter="z">z</button>
+		<button class="tasto" data-letter="x">x</button>
+		<button class="tasto" data-letter="c">c</button>
+		<button class="tasto" data-letter="v">v</button>
+		<button class="tasto" data-letter="b">b</button>
+		<button class="tasto" data-letter="n">n</button>
+		<button class="tasto" data-letter="m">m</button>
+		<button class="tasto one-and-a-half" data-letter="BACKSPACE" >
+			<img src="assets/img/backspace.svg">
+		</button>
+	</div>
+</div>
+</section>
+</div>
+<script type="text/javascript" src="https://pagecdn.io/lib/mathjs/10.4.0/math.min.js"></script>
+ <script src="assets/js/wordle.js"></script>
+</body>
+</html>
